@@ -1,0 +1,25 @@
+#application.yml
+
+server: 
+    port: 8085
+
+spring:
+    datasource:
+        name: warehouse
+        url: jdbc:mysql://172.16.8.102:3307/warehouse?useSSL=false
+        username: root
+        password: root
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: com.geekplus.poseidon.demo.mapper
+  global-config:
+    db-config:
+      field-strategy: NOT_EMPTY
+      id-type: auto
+      db-type: mysql
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
