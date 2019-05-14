@@ -20,7 +20,7 @@ public class DBConnect {
         {
             synchronized (DBConnect.class){
                 if(source == null || source.isClosed()){
-                    source= DriverManager.getConnection(Constant.SOURCE_DBURL, Constant.SOURCE_USERNAME, Constant.SOURCE_PASSWORD);
+//                    source= DriverManager.getConnection(Constant.SOURCE_DBURL, Constant.SOURCE_USERNAME, Constant.SOURCE_PASSWORD);
                 }
             }
         }
@@ -33,7 +33,7 @@ public class DBConnect {
         {
             synchronized (DBConnect.class){
                 if(target == null || target.isClosed()){
-                    target= DriverManager.getConnection(Constant.TARGET_DBURL, Constant.TARGET_USERNAME, Constant.TARGET_PASSWORD);
+//                    target= DriverManager.getConnection(Constant.TARGET_DBURL, Constant.TARGET_USERNAME, Constant.TARGET_PASSWORD);
                 }
             }
         }

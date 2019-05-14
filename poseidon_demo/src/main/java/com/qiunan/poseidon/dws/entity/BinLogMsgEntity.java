@@ -26,13 +26,13 @@ public class BinLogMsgEntity implements Serializable {
     private Long id;
     
     @JSONField
-    private boolean isDdl;
+    private Boolean isDdl;
     
     @JSONField
     private String table;
     
     @JSONField
-    private Long ts;
+    private long ts;
     
     @JSONField
     private String type;
@@ -48,7 +48,5 @@ public class BinLogMsgEntity implements Serializable {
     
     @JSONField
     private String sql;
-
-   
 
 }

@@ -2,7 +2,7 @@ package com.qiunan.poseidon.common;
 
 public class Constant {
     // -----------------MQ source config ------------------//
-    public final static String SOURCE_NAME_SERVER_ADDR = "localhost:9876";
+    public final static String SOURCE_NAME_SERVER_ADDR = "10.44.50.244:9876;10.44.50.245:9876";
     public final static String SOURCE_CONSUMER_GROUP_ODS = "ods";
     public final static String SOURCE_CONSUMER_TOPIC = "test";
     public final static String TOPIC_MSG_FROM_DWD = "MsgFromDwd";
