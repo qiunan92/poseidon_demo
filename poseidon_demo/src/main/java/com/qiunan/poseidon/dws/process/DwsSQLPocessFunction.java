@@ -51,7 +51,7 @@ public class DwsSQLPocessFunction extends ProcessFunction<BinLogMsgEntity, Strin
             }
 
             // 2.判断是否为ddl
-            if (msgEntity.isDdl()) {
+            if (msgEntity.getIsDdl()) {
                 // ddl语句暂时忽略
                 // processDdl(msgEntity, newTable, out);
             } else {
